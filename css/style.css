@@ -1,0 +1,60 @@
+/* ----- GLOBAL STYLES ----- */
+* {
+    box-sizing: border-box;
+}
+
+/* ----- LAYOUT ----- */
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* ----- BASE STYLES ----- */
+body {
+    margin: 0;
+    color: rgb(130, 130, 130);
+}
+
+fieldset {
+    border: none;
+    border-top: solid 1px rgb(60, 60, 60);
+    padding: 0;
+    margin: 0;
+}
+
+/* ----- STYLES ----- */
+header {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(60, 60, 60);
+}
+
+h1 {
+    margin-top: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+legend {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    border-bottom: solid 4px rgb(60, 60, 60);
+    padding-bottom: 30px;
+}
