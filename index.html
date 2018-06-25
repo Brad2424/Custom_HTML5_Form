@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,17 +19,15 @@
 
         <form action="index.html" method="POST">
             <fieldset>
+                <legend>Contact Information</legend>
                 <div class="fset1">
-                    <!-- <div> -->
-                    <legend>Contact Information</legend>
-                    <!-- </div> -->
                     <div>
                         <label for="full-name">Full Name:</label>
-                        <input type="text" id="full-name" placeholder="Required" name="contact_full_name">
+                        <input type="text" id="full-name" placeholder="Required" name="contact_full_name" required>
                     </div>
                     <div>
                         <label for="email-address">Email Address:</label>
-                        <input type="email" id="email-address" placeholder="Required" name="contact_email_address">
+                        <input type="email" id="email-address" placeholder="Required" name="contact_email_address" required>
                     </div>
                     <div>
                         <label for="phone-number">Phone Number:</label>
@@ -102,10 +101,9 @@
                         <label for="zip-code">Zip Code:</label>
                         <input type="number" id="zip-code" name="contact_zip_code">
                     </div>
-                </div>
+                </div> <!-- .fset1 -->
             </fieldset>
             <fieldset>
-                <div class="fset2">
                     <legend>Newsletter</legend>
 
                     <p>Select the newsletters you would like to receive</p>
@@ -125,11 +123,10 @@
                     <input type="radio" name="contact_newsletter_format" id="pt-newsletter-format" value="plain-text">
                     <label for="pt-newsletter-format">Plain text</label><br>
 
-                    <p>Other topics you'd like to hear about</p>
-                    <textarea name="suggested_other_topics" id="other topics"></textarea><br>
+                    <label for="other-topics">Other topics you'd like to hear about</label><br>
+                    <textarea name="suggested_other_topics" id="other-topics"></textarea><br>
 
                     <button type="submit">Sign Up</button>
-                </div>
             </fieldset>
         </form>
     </main> <!-- wrapper -->
