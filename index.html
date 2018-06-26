@@ -44,6 +44,7 @@
                     <div>
                         <label for="state">State:</label>
                         <select name="contact_state" id="state">
+                        <option value="Select" disabled selected>Select State</option>
                         <option value="AL">Alabama (AL)</option>
                         <option value="AK">Alaska (AK)</option>
                         <option value="AZ">Arizona (AZ)</option>
@@ -98,7 +99,7 @@
                         </select>
                     </div>
                     <div>
-                        <label for="zip-code">Zip Code:</label>
+                        <label for="zip-code" class="small-label">Zip Code:</label>
                         <input type="number" id="zip-code" name="contact_zip_code">
                     </div>
                 </div> <!-- .fset1 -->
@@ -124,7 +125,7 @@
                     <label for="pt-newsletter-format">Plain text</label><br>
 
                     <label for="other-topics">Other topics you'd like to hear about</label><br>
-                    <textarea name="suggested_other_topics" id="other-topics"></textarea><br>
+                    <textarea name="suggested_other_topics" id="other-topics" placeholder="What interests you?"></textarea><br>
 
                     <button type="submit">Sign Up</button>
             </fieldset>

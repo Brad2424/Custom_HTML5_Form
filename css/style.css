@@ -31,6 +31,10 @@
     margin-bottom: 20px;
 }
 
+#zip-code {
+    width: 50%;
+}
+
 /* ----- BASE STYLES ----- */
 body {
     margin: 0;
@@ -122,6 +126,13 @@ input::placeholder {
     padding-right: 15px;
 }
 
+textarea::placeholder {
+    color: rgb(130, 130, 130);
+    font-size: 0.8rem;
+    font-style: italic;
+    padding-right: 15px;
+}
+
 button[type="submit"] {
     width: 100%;
     color: white;
@@ -153,6 +164,7 @@ footer {
     .fset1 div {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
     }
 
     .fset1 input,
@@ -168,5 +180,13 @@ footer {
 
     .fset1 {
         height: 450px;
+    }
+
+    #zip-code {
+        max-width: 35%;
+    }
+
+    .small-label {
+        max-width: 30%;
     }
 }
